@@ -1,0 +1,90 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding-bottom: 1rem;
+}
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+}
+header {
+  background: navy;
+  color: white;
+  text-align: center;
+  padding: 1rem 0 0;
+}
+h1 {
+  font-size: 22px;
+}
+header h2 {
+  font-size: 18px;
+}
+header ul {
+  list-style: none;
+}
+header li {
+  display: inline;
+  font-size: 14px;
+}
+header li::before {
+  content: "•";
+}
+header li:first-child::before {
+  content: "";
+}
+header a {
+  color: white;
+}
+main {
+  display: flex;
+}
+aside {
+  background: rgb(180, 221, 237);
+  padding: 2rem;
+}
+aside h3, section h3 {
+  font-size: 18px;
+  color: navy;
+}
+aside h4, section h4 {
+  font-size: 16px;
+}
+aside p, aside li, section p, section li {
+  font-size: 14px;
+}
+aside ul {
+  list-style: none;
+  padding-left: 0;
+}
+aside li {
+  display: inline;
+}
+aside li::before {
+  content: "| ";
+}
+aside li:first-child::before {
+  content: "";
+}
+section {
+  padding: 2rem;
+}
+section h2 {
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+section h2, section h3, section h4, section p, section li {
+  padding-bottom: 5px;
+}
+@media screen and (min-width: 481px) {
+  main {
+    display: flex;
+  }
+  aside {
+    width: 400px;
+  }
+  section {
+    flex-grow: 2;
+  }
+}
