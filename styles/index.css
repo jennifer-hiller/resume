@@ -37,9 +37,6 @@ header li:first-child::before {
 header a {
   color: white;
 }
-main {
-  display: flex;
-}
 aside {
   background: rgb(180, 221, 237);
   padding: 2rem;
